@@ -4,6 +4,7 @@
 2. [Subplots](#schema2)
 3. [Types of plots](#schema3)
 4. [Leyendas ](#schema4)
+5. [Object oriented plots](#scema5)
 
 
 
@@ -126,7 +127,7 @@ plt.polar(x,y)
 <hr>
 <a name="schema4"></a>
 
-# 4. Leyendas
+# 4. Legends
 
 Para poner las leyendas en las visualiaciones se pone:
 ~~~python
@@ -155,3 +156,30 @@ plt.legend(loc = 10)
 ~~~
 
 ![legend](./image/l4.png)
+
+<hr>
+<a name="schema5"></a>
+
+# 5. Object oriented plots
+
+Cambiar el tamaño de los ejes
+
+~~~python
+fig = plt.figure()
+axes = fig.add_axes([0.1,0.1,1,1])
+~~~
+![axes](./image/opp1.png)
+
+~~~python
+fig = plt.figure()
+axes = fig.add_axes([0.1,0.3,1,1])
+~~~
+![axes](./image/opp2.png)
+
+
+~~~python
+fig = plt.figure()
+axes = fig.add_axes([0.1,0.3,1,1])
+axes.plot(x,y)
+~~~
+![axes](./image/opp3.png)
