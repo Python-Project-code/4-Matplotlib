@@ -168,13 +168,13 @@ Cambiar el tamaño de los ejes
 fig = plt.figure()
 axes = fig.add_axes([0.1,0.1,1,1])
 ~~~
-![axes](./image/opp1.png)
+![axes](./image/oop1.png)
 
 ~~~python
 fig = plt.figure()
 axes = fig.add_axes([0.1,0.3,1,1])
 ~~~
-![axes](./image/opp2.png)
+![axes](./image/oop2.png)
 
 
 ~~~python
@@ -182,4 +182,4 @@ fig = plt.figure()
 axes = fig.add_axes([0.1,0.3,1,1])
 axes.plot(x,y)
 ~~~
-![axes](./image/opp3.png)
+![axes](./image/oop3.png)
