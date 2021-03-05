@@ -3,7 +3,7 @@
 1. [Getting started](#schema1)
 2. [Subplots](#schema2)
 3. [Types of plots](#schema3)
-1. [Leyendas ](#schema1)
+4. [Leyendas ](#schema4)
 
 
 
@@ -86,10 +86,6 @@ plt.tight_layout()
 ~~~
 ![subplot](./image/subplot4.png)
 
-
-
-
-
 <hr>
 <a name="schema3"></a>
 
@@ -127,15 +123,35 @@ plt.polar(x,y)
 
 
 
-
-
 <hr>
-<a name="schema1"></a>
+<a name="schema4"></a>
 
-# 1. Leyendas
+# 4. Leyendas
 
 Para poner las leyendas en las visualiaciones se pone:
 ~~~python
 plt.plot(x,y,label = 'First example')
 plt.legend()
 ~~~
+![legend](./image/fe.png)
+
+Poner la leyenda para cada eje
+~~~python
+plt.plot(x,y,y,x,label = 'First example')
+plt.legend()
+~~~
+![legend](./image/l2.png)
+
+Cambiar la posición de la leyenda
+~~~python
+plt.plot(x,y,y,x,label = 'First example')
+plt.legend(loc = 2)
+~~~
+
+![legend](./image/l3.png)
+~~~python
+plt.plot(x,y,y,x,label = 'First example')
+plt.legend(loc = 10)
+~~~
+
+![legend](./image/l4.png)
