@@ -183,3 +183,33 @@ axes = fig.add_axes([0.1,0.3,1,1])
 axes.plot(x,y)
 ~~~
 ![axes](./image/oop3.png)
+
+
+# 6. Multiple_plots
+~~~python
+fig = plt.figure()
+x1 = fig.add_axes([0.1,0.1,0.8,0.8])
+x2 =  fig.add_axes([0.3,0.3,0.3,0.3])
+
+~~~
+![img](./image/oop4.png)
+
+~~~python
+fig = plt.figure()
+x1 = fig.add_axes([0.1,0.1,0.8,0.8])
+x1.plot(x,y)
+x2 =  fig.add_axes([0.3,0.3,0.3,0.3])
+x2.plot(y,x)
+plt.savefig("./image/oop5.png")
+~~~
+![img](./image/oop5.png)
+
+# 7. Subplots using object oriented
+~~~python
+fig ,axes = plt.subplots(1,2)
+axes[0].plot(x,y)
+axes[1].plot(y,x)
+plt.tight_layout()
+plt.savefig("./image/006.png")
+~~~
+![img](./image/006.png)
