@@ -5,6 +5,8 @@
 3. [Types of plots](#schema3)
 4. [Leyendas ](#schema4)
 5. [Object oriented plots](#scema5)
+6. [Multiple_plots](#schema6)
+7. [Subplots using object oriented](#schema7)
 
 
 
@@ -184,6 +186,8 @@ axes.plot(x,y)
 ~~~
 ![axes](./image/oop3.png)
 
+<hr>
+<a name="schema6"></a>
 
 # 6. Multiple_plots
 ~~~python
@@ -203,6 +207,9 @@ x2.plot(y,x)
 plt.savefig("./image/oop5.png")
 ~~~
 ![img](./image/oop5.png)
+
+<hr>
+<a name="schema7"></a>
 
 # 7. Subplots using object oriented
 ~~~python
